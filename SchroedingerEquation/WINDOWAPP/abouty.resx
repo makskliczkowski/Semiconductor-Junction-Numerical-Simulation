@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>This is the program that counts material parameters for given semiconductor structure. It can interpolate parameters in structures such as III-III-V, III-V-V, III-III-V-V.
+For that to be possible, the information about two-semiconductor materials was taken from I. Vurgaftman, J. R. Meyer and L. R. Ram-Mohan "Band parameters for III-V compound semiconductors and their alloys". 
+All of the interpolation is based on empirical Vegard's law. To make it more realistic, also the temperature dependence has been established with alpha and beta parameters, which are calculated and present in the .dat files. After that, one can also include strain which originates from mismatch between crystal structure constants of two distinct materials.
+Also, the deviation from linearity in interpolation due to two terms - intrinsic bowing obtained in virtual crystal approximation(VCA) and extrinsic bowing due to the former aperiodicity in the alloy lattice. They were obtained from Sadao Adachi "Properties of Semiconductor Alloys".
+
+All the parameters can be changed further by changing it inside ../ C++ files, compile it again and transport the executable file inside aplication executable file folder.
+One can also control width and amount of distinct compounds in the whole material by changing x and y in A_{x}B_{1-x}C_{y}D_{y-1}. 
+For the interpolation as an x function for each material we take y as a parameter from the left side area of an application. That is for the first material we have y1 and for the second y2. 
+
+Aplikacja jest możliwa do pobrania i przetestowania na stronie  https://github.com/makskliczkowski/ .  Poprawna kompilacja znajduje się w folderze \textit{SchroedingerEquation\\WINDOWAPP\\bin\\Debug} w repozytorium dotyczącym tego zagadnienia. Program napisany w języku C++, znajdujący się w folderze niżej, jest odpowiedzialny za wykonanie obliczeń numerycznych na podstawie współcześnie stosowanych algorytmów. Możliwe jest również użycie ,uogólnionej na macierze tridiagonalne, metody Lanczosa do obliczeń stanów i energii własnych w przybliżeniu masy efektywnej \cite{Hamaguchi2009}. W pliku \textit{$Numerical_Methods.cpp$} znajduje się zestaw metod pozwalających na użycie metody pochodnej dzięki elementom skończonym, \textit{simpsonInt}, która pozwala na wykonanie całki numerycznej na zadanym przedziale metodą Simpsona \cite{simpson}, zaimplementowane mnożenie macierzy tridiagonalnej razy wektor, wcześniej wspomniana metoda Lanczosa, (niedokończony) algorytm Thomasa do rozwiązywania symetrycznego układu równań tridiagonalnych, a także rozwiązanie równania Schroedingera metodą Martina Deana dla zmiennej lub stałej masy efektywnej w przybliżeniu parabolicznym. Metody te pozwalają na obliczenie energii własnych za pomocą prztransformowanych wielomianów charakterystycznych symetrycznych lub usymetryzowanych macierzy tridiagonalnych, dzięki obliczeniu ilości zmiennych znaków i zastosowaniu następnie metody bisekcji o zadanej dokładności(\textit{MethodsBisectionSchroedinger.cpp}. Wszystkie parametry materiałowe możemy znaleźć w pliku \textit{Parameters.cpp}. Zewnętrzna aplikacja stworzona w języku C\#, użwywająca systemu .Net, pozwala na użycie wewnątrz aplikacji w cpp za pomocą argumentów otwarcia. Następnie wszystkie dane są wczytywane do plików znajdujących się w folderze z głównym programem.
+
+Zaznacza się, że sam program nie jest wersją finalną i wiele elementów może zostać w nim poprawionych. Ważne wnioski fizyczne mogą być już jednak wyciągniete ze względu na to, że forma obliczeniowa jest już poprawna. 
+
+W zakładce Schrodinger equation znajduje się możliwość przetestowania algorytmu dla potencjału parabolicznego formulującego kwantowy oscylator harmoniczny \cite{numeric1} \cite{Salejda1999}. Następnie w zakładce charts znajdują się trzy wykresy pozwalające na przeanalizowanie algorytmów dla naszej zadanej struktury. Jako pierwszy wykres widzimy zależność wierzchołków pasm energetycznych dla zadanych przez nas parametrów w zależności od odległości podanej w Angstromach. Również tam rysowane są funkcje falowe wiążące się w danej sytuacji. Poniżej otrzymujemy wykresy interpolacyjne, odpowiednio od lewej, dla wierzchołków energetycznych przy ustalonym parametrze y dla wybranego półprzewodnika oraz mas efektywnych. Powyżej tych wykresów znajduje się możliwość wyboru interpolowanego materiału. Pod wspomnianymi zakładkami znajdują się funkcje pozwalające na zmianę parametrów strukturach zgodnie z przeznaczeniem. Wielkości są ograniczone do testów, jednakże zmiana tego ograniczenia jest rzeczą trywialną i zajmującą bardzo krótki czas. Możliwe jest również wybranie podłoża i zaznaczenie (YES/NO) użycia naprężeń w obliczeniach. Podłoże jest ustawione na stałą długość 200A(20nm)(co również może być w prosty sposób zmienione). Niestety, występuje(jeszcze) nierozwiązany bug przy zmianie wartości stanów energetycznych z 1 na więcej, lecz nie to interesuje nas w tym momencie. Zakładka calculate pozwala na dokonanie wszystkich obliczeń, oraz na zapis parametrów do plików w tym samym folderze. Zakładka about przedstawia część z informacji użytych powyżej.
+
+Copyright Maksymilian Kliczkowski(2020)</value>
+  </data>
+</root>

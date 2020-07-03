@@ -1,0 +1,5 @@
+﻿  MethodsBisectionSchroedinger.cpp
+D:\Uni\SEMESTERS\MS\I\Lasers\I\SpecialFunctions\SchroedingerEquation\Parameters.h(3): error : cannot open source file "armadillo"
+    #include <armadillo>
+                        ^
+  
